@@ -15,7 +15,8 @@ public class ProductRepo {
         products.add(product);
     }
 
-    public void removeProduct(Product product) {
+    public void  removeProduct(int id){
+        Product product = getProductById(id);
         products.remove(product);
     }
 
